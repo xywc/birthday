@@ -1,5 +1,5 @@
 <!--city.wxml-->
-<view class="container">
+<view class="container"  style="background-image:url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532950856063&di=b243becb419437b83defdeebe170a9b2&imgtype=0&src=http%3A%2F%2Fpic-cdn.35pic.com%2F58pic%2F13%2F30%2F26%2F01A58PICywD.jpg');background-size:100% 100%">
   <text class="city_title">你的城市</text>
   <radio-group class="radio-group" bindchange="radioChange">
       <label wx:for="{{cities}}" wx:key="name">

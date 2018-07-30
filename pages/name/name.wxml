@@ -1,5 +1,5 @@
 <!--name.wxml-->
-<view class="container">
+<view class="container" style="background-image:url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532950402699&di=403e77f46be91843214703871d509f61&imgtype=0&src=http%3A%2F%2Fimg07.tooopen.com%2Fimages%2F20170301%2Ftooopen_sy_200088094226.jpg');background-size:100% 100%">
   <text class="name_title">你的名字</text>
   <radio-group class="radio-group" bindchange="radioChange">
       <label wx:for="{{names}}" wx:key="name">

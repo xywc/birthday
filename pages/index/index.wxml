@@ -1,14 +1,14 @@
 <!--index.wxml-->
-<view class="container">
+<view class="container" style="background-image:url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532950213233&di=5af6a21abb3dabe4528eb7d28810b5d4&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F10%2F69%2F07%2F27bOOOPIC34.jpg');background-size:100% 100%">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">欢迎{{userInfo.nickName}}！</text>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text> 
+  <view class="text">
+    <text>{{text}}</text> 
   </view>
-  <button bindtap="start">开始闯关</button>
+  <button style='background:cyan' bindtap="start">开始闯关</button>
 </view>

@@ -1,5 +1,5 @@
 <!--gender.wxml-->
-<view class="container">
+<view class="container" style="background-image:url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532950952071&di=84b8c273de2631297e869ed5570f5391&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F16%2F07%2F30%2F22579cbc6c9544f.jpg');background-size:100% 100%">
   <text class="gender_title">你的性别</text>
   <radio-group class="radio-group" bindchange="radioChange">
       <label wx:for="{{genders}}" wx:key="name">

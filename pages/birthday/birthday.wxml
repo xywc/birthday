@@ -1,9 +1,9 @@
 <!--birthday.wxml-->
-<view class="container">
+<view class="container" style="background-image:url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532951256413&di=a14a042ffd53fbca4d5aef64d1397991&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F16%2F12%2F24%2F0eacdc9f514eea02b7453b87de1ceae6.jpg');background-size:100% 100%">
   <text class="name_title">你的生日</text>
   <picker mode="date" value="{{date}}" start="1900-01-01" end="2100-12-31" bindchange="bindDateChange">
     <view class="picker">
-      当前选择: {{date}}
+      <text >当前选择: {{date}}</text>
     </view>
   </picker>
   <button type="default" bindtap="confirm" hover-class="other-button-hover"> 确认</button>

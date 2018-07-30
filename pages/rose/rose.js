@@ -55,7 +55,7 @@ Page({
     }
     that.data.setInter = setInterval(
       function () {
-        for (var i = 0; i < 1e4; i++) {
+        for (var i = 0; i < 5e3; i++) {
           if (s = p(Math.random(), Math.random(), i % 46 / .74)) {
             z = s[2];
             x = ~~(s[0] * f / z - h);
@@ -74,11 +74,19 @@ Page({
       }, 500);
     setTimeout(function(){
       clearInterval(that.data.setInter)
-    },30000)
+    },20000)
   },
   onUnload: function () {
     var that = this;
     //清除计时器  即清除
+    console.log("onUnload");
+    clearInterval(that.data.setInter);
+    wx.getBackgroundAudioManager().stop();
+  },
+  onHide: function () {
+    var that = this;
+    //清除计时器  即清除
+    console.log("onHide");
     clearInterval(that.data.setInter);
     wx.getBackgroundAudioManager().stop();
   },
