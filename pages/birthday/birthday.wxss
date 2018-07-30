@@ -1,0 +1,12 @@
+.name_title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size:30px;
+  font-weight:bold;    /*设置字体加粗*/
+  border:1px solid red;
+  font-family:"宋体";
+}
+.picker{
+ padding: 26rpx;
+ background-color: #FFFFFF;
+}

@@ -1,0 +1,24 @@
+.name_title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size:30px;
+  font-weight:bold;    /*设置字体加粗*/
+  border:1px solid red;
+  font-family:"宋体";
+}
+.radio-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap:wrap;
+  justify-content:center;
+  font-size:25px;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  font-size:25px;
+}

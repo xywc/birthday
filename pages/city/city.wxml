@@ -1,0 +1,14 @@
+<!--city.wxml-->
+<view class="container">
+  <text class="city_title">你的城市</text>
+  <radio-group class="radio-group" bindchange="radioChange">
+      <label wx:for="{{cities}}" wx:key="name">
+        <view class="city_image">
+            <image class="image" mode="aspectFill" src="{{item.src}}"></image>
+            <view>
+              <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.name}}  
+            </view>           
+        </view>   
+      </label>
+  </radio-group>
+</view>

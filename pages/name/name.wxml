@@ -1,0 +1,11 @@
+<!--name.wxml-->
+<view class="container">
+  <text class="name_title">你的名字</text>
+  <radio-group class="radio-group" bindchange="radioChange">
+      <label wx:for="{{names}}" wx:key="name">
+        <view class="name">
+          <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.name}}            
+        </view>   
+      </label>
+  </radio-group>
+</view>

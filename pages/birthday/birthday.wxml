@@ -1,0 +1,10 @@
+<!--birthday.wxml-->
+<view class="container">
+  <text class="name_title">你的生日</text>
+  <picker mode="date" value="{{date}}" start="1900-01-01" end="2100-12-31" bindchange="bindDateChange">
+    <view class="picker">
+      当前选择: {{date}}
+    </view>
+  </picker>
+  <button type="default" bindtap="confirm" hover-class="other-button-hover"> 确认</button>
+</view>

@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/city/city",
+    "pages/name/name",
+    "pages/birthday/birthday",
+    "pages/school/school",
+    "pages/gender/gender",
+    "pages/rose/rose"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

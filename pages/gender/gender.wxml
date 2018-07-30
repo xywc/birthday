@@ -1,0 +1,14 @@
+<!--gender.wxml-->
+<view class="container">
+  <text class="gender_title">你的性别</text>
+  <radio-group class="radio-group" bindchange="radioChange">
+      <label wx:for="{{genders}}" wx:key="name">
+        <view class="gender_image">
+            <image class="image" mode="aspectFill" src="{{item.src}}"></image>
+            <view>
+              <radio value="{{item.name}}" checked="{{item.checked}}"/>
+            </view>           
+        </view>   
+      </label>
+  </radio-group>
+</view>

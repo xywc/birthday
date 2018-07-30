@@ -1,0 +1,26 @@
+.gender_title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size:30px;
+  font-weight:bold;    /*设置字体加粗*/
+  border:1px solid red;
+  font-family:"宋体";
+}
+.radio-group{
+  display: flex;
+  align-items: center;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.gender_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image{
+  width:150px;
+  height:150px;
+  margin:10px 10px 10px 10px;
+}
